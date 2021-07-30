@@ -1,10 +1,19 @@
 from distutils.core import setup
+from setuptools import setup, find_packages
+import pathlib
+
+here = pathlib.Path(__file__).parent.resolve()
+
+# Get the long description from the README file
+long_description = (here / 'README.md').read_text(encoding='utf-8')
+
 setup(
   name = 'KEEpydb',         # How you named your package folder (MyLib)
   packages = ['KEEpydb'],   # Chose the same as "name"
   version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Database for Python',   # Give a short description about your library
+  long_description=long_description
   author = 'Durgesh Rawat',                   # Type in your name
   author_email = 'durgeshrawat.info@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/durgeshrawat/KEEpydb',   # Provide either the link to your github or to your website
