@@ -2,14 +2,14 @@ from distutils.core import setup
 setup(
   name = 'KEEpydb',         # How you named your package folder (MyLib)
   packages = ['KEEpydb'],   # Chose the same as "name"
-  version = '0.3',      # Start with a small number and increase it with every change you make
+  version = '0.4',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Database for Python',   # Give a short description about your library
   long_description='for More information and example code for KEEpydb visit : https://keepydb.wordpress.com',#full description
   author = 'Durgesh Rawat',                   # Type in your name
   author_email = 'durgeshrawat.info@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/durgeshrawat/KEEpydb',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/durgeshrawat/KEEpydb/archive/refs/tags/v_03.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/durgeshrawat/KEEpydb/archive/refs/tags/v_04.tar.gz',    # I explain this later on
   keywords = ['KEEpydb', 'database', 'db'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'openpyxl',
