@@ -109,8 +109,10 @@ class query:
         self.sheet.delete_cols(idx,amount)
         
     def search(self,searchelement): #search for values
-        d=self.get_all()
-        for i in d:
+        l=[]
+        for i in self.sheet.iter_rows(values_only=True):
+            l.append(i)
+        for i in l:
             for j in i:
                 if searchelement in i:
                     return (searchelement,i[i.index(searchelement)+1])
