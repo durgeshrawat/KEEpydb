@@ -108,6 +108,13 @@ class query:
     def delete_columns(self,idx,amount=1): #delete columns
         self.sheet.delete_cols(idx,amount)
         
+    def search(self,searchelement): #search for values
+        d=get_all()
+        for i in d:
+            for j in i:
+                if searchelement in i:
+                    return (searchelement,i[i.index(searchelement)+1])
+                    
     def delete_rows(self,idx,amoumt=1): #delete row
         self.sheet.delete_rows(idx,amount)
         
@@ -116,6 +123,7 @@ class query:
             self.workbook.save(filename=f'{self.dbname}/{self.username}.KEEpydb.xlsx')
         except:
             self.workbook.save(filename=f'{self.dbname}\\{self.username}.KEEpydb.xlsx')
+            
             
         
                 
