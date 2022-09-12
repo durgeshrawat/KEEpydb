@@ -4,7 +4,7 @@ try:
 except:
     import os
     os.system('pip install openpyxl')
-    os.system('pip install pyrebase')
+    os.system('pip install Pyrebase')
 
 
 try:
